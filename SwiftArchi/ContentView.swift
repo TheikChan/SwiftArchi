@@ -7,10 +7,11 @@
 
 import SwiftUI
 import Data
+import Factory
 
 struct ContentView: View {
     
-    @StateObject public var viewModel: UserViewModel
+    @StateObject private var viewModel: UserViewModel = Container.shared.userViewModel()
     
     var body: some View {
         VStack {
@@ -18,11 +19,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+                .onAppear {
+                    viewModel.loadUser(userId: 123)
+                }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView(viewModel: UserViewModel(fetchUser: UserRepository()))
+    ContentView()
 }

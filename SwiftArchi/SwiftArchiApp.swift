@@ -12,7 +12,7 @@ import Data
 struct SwiftArchiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: UserViewModel(fetchUser: UserRepository()))
+            ContentView()
         }
     }
 }
