@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		8F095A142C8B7ECB0012151C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F095A132C8B7ECB0012151C /* ContentView.swift */; };
 		8F095A162C8B7ECD0012151C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F095A152C8B7ECD0012151C /* Assets.xcassets */; };
 		8F095A192C8B7ECD0012151C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F095A182C8B7ECD0012151C /* Preview Assets.xcassets */; };
+		8F095A252C8B85370012151C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 8F095A242C8B85370012151C /* Data */; };
+		8F095A2A2C8B85720012151C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 8F095A292C8B85720012151C /* Data */; };
+		8F095A352C8B874E0012151C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F095A342C8B874E0012151C /* UserViewModel.swift */; };
+		8F095A3C2C8B8AF90012151C /* AppDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 8F095A3B2C8B8AF90012151C /* AppDomain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		8F095A132C8B7ECB0012151C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F095A152C8B7ECD0012151C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F095A182C8B7ECD0012151C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F095A212C8B81720012151C /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
+		8F095A342C8B874E0012151C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8F095A362C8B8A7B0012151C /* AppDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppDomain; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F095A3C2C8B8AF90012151C /* AppDomain in Frameworks */,
+				8F095A2A2C8B85720012151C /* Data in Frameworks */,
+				8F095A252C8B85370012151C /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +45,8 @@
 		8F095A052C8B7ECB0012151C = {
 			isa = PBXGroup;
 			children = (
+				8F095A362C8B8A7B0012151C /* AppDomain */,
+				8F095A212C8B81720012151C /* Data */,
 				8F095A102C8B7ECB0012151C /* SwiftArchi */,
 				8F095A0F2C8B7ECB0012151C /* Products */,
 			);
@@ -51,6 +63,7 @@
 		8F095A102C8B7ECB0012151C /* SwiftArchi */ = {
 			isa = PBXGroup;
 			children = (
+				8F095A342C8B874E0012151C /* UserViewModel.swift */,
 				8F095A112C8B7ECB0012151C /* SwiftArchiApp.swift */,
 				8F095A132C8B7ECB0012151C /* ContentView.swift */,
 				8F095A152C8B7ECD0012151C /* Assets.xcassets */,
@@ -83,6 +96,11 @@
 			dependencies = (
 			);
 			name = SwiftArchi;
+			packageProductDependencies = (
+				8F095A242C8B85370012151C /* Data */,
+				8F095A292C8B85720012151C /* Data */,
+				8F095A3B2C8B8AF90012151C /* AppDomain */,
+			);
 			productName = SwiftArchi;
 			productReference = 8F095A0E2C8B7ECB0012151C /* SwiftArchi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +129,10 @@
 				Base,
 			);
 			mainGroup = 8F095A052C8B7ECB0012151C;
+			packageReferences = (
+				8F095A232C8B85370012151C /* XCLocalSwiftPackageReference "Data" */,
+				8F095A3A2C8B8AF90012151C /* XCLocalSwiftPackageReference "AppDomain" */,
+			);
 			productRefGroup = 8F095A0F2C8B7ECB0012151C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F095A142C8B7ECB0012151C /* ContentView.swift in Sources */,
+				8F095A352C8B874E0012151C /* UserViewModel.swift in Sources */,
 				8F095A122C8B7ECB0012151C /* SwiftArchiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +367,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8F095A232C8B85370012151C /* XCLocalSwiftPackageReference "Data" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Data;
+		};
+		8F095A3A2C8B8AF90012151C /* XCLocalSwiftPackageReference "AppDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AppDomain;
+		};
+		8F095A3F2C8B8DFB0012151C /* XCLocalSwiftPackageReference "" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F095A242C8B85370012151C /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		8F095A292C8B85720012151C /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		8F095A3B2C8B8AF90012151C /* AppDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F095A062C8B7ECB0012151C /* Project object */;
 }

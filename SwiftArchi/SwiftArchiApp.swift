@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Data
 
 @main
 struct SwiftArchiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: UserViewModel(fetchUser: UserRepository()))
         }
     }
 }

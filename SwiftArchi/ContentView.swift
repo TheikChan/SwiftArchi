@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Data
 
 struct ContentView: View {
+    
+    @StateObject public var viewModel: UserViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +24,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: UserViewModel(fetchUser: UserRepository()))
 }
